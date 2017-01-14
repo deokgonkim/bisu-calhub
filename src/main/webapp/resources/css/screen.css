@@ -1,0 +1,193 @@
+html, body {
+    background-color: #f5e590;
+    font-size: 0.95em;
+    margin: 0;
+    padding: 0;
+}
+
+a img {
+    border: 0;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+    color: #d3643b;
+    text-decoration: underline;
+}
+
+h1 {
+    color: #d3643b;
+    font-family: Trebuchet MS, Calibri, Verdana, Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+#body {
+    background-color: #f5e599;
+    padding: 10px;
+}
+
+#header {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+#header-logo {
+    width: 251px;
+}
+
+#header-auth {
+    margin: 0.5em 1em 0 0;
+    text-align: right;
+    vertical-align: middle;
+
+    font-family: Trebuchet MS, Calibri, Verdana, Arial, sans-serif;
+    white-space: nowrap;
+}
+
+#header-auth p, #header-auth h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#header-avatar {
+    margin-left: 5px;
+    width: 64px;
+}
+
+table#layout-container {
+    padding: 0 10px 20px 10px;
+    width: 100%;
+    border: 0;
+}
+
+td#sidebar-container {
+    width: 15%;
+    
+    margin: 0;
+    vertical-align: top;
+}
+
+#toolbar {
+    position: relative;
+    float: right;
+    width: 150px;
+    padding: 8px;
+
+    background-color: #dbe1c7;
+    border: 1px solid #b7beab;
+
+    color: #6d7063;
+}
+
+#toolbar a, #toolbar a:link, #toolbar a:active, #toolbar a:visited {
+    color: #6d7063;
+    text-decoration: none;
+}
+
+#toolbar:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#toolbar h3 {
+    margin: 0.5em 0 0.3em 0;
+
+    font-family: Candara, Verdana, Tahmoa, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #acb5a0;
+}
+
+#toolbar #text {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+#toolbar-text a, #toolbar-text a:link, #toolbar-text a:active, #toolbar-text a:visited {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+
+#toolbar p {
+    margin: 0.2em 0 0.2em 1em;
+}
+
+#footer {
+    height: 50px;
+}
+
+.form-field th {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* CSS for the list pages */
+table.input-form {
+    border-spacing: 13px;
+}
+
+.input-form label {
+    text-align: left;
+    float: left;
+}
+
+.input-form th {
+    vertical-align: top;
+}
+
+.input-form td {
+    font-size: 0.7em;
+    vertical-align: top;
+}
+
+.object_list {
+    width: 100%;
+}
+
+.object_list thead tr {
+    text-transform: uppercase;
+}
+
+.object_list thead th {
+    border-bottom: 1px dashed black;
+    text-align: left;
+    padding: 8px;
+}
+
+.object_list tbody {
+    border-top: 2px dashed black;
+}
+
+.object_list tfoot tr {
+    text-align: center;
+    height: 1.7em;
+}
+
+.object_list td {
+    padding: 7px 3px;
+}
+
+.object_list td a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.object_list td.icon {
+    padding: 0;
+    text-align: center;
+}
+
+.object_list td.icon img {
+    vertical-align: middle;
+}
+
+.object_list div.paginator {
+    text-align: center;
+}

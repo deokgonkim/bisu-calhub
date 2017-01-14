@@ -1,0 +1,6 @@
+<!--  
+  Context fragment for deploying MyWebApp.war  
+ -->
+<Context path="/calhub" debug="0" privileged="false">
+    <Realm className="org.apache.catalina.realm.JNDIRealm" connectionURL="ldaps://zoo.tigersoft.co.kr:636" roleBase="ou=Groups,dc=tigersoft,dc=co,dc=kr" roleName="cn" roleSearch="(uniqueMember={0})" userPattern="uid={0},ou=Users,dc=tigersoft,dc=co,dc=kr"/>
+</Context>

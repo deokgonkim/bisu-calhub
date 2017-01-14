@@ -1,0 +1,26 @@
+{"menu":
+    [
+        {
+            "id":"FIRST",
+            "text":"1st menu",
+            "leaf":true,
+            "viewName":"webview",
+            "menuDescription":"first description",
+            "url":"https://www.dgkim.net/drp/"
+        },{
+            "id":"users",
+            "text":"사용자별",
+            "leaf":false,
+            "viewName":"null",
+            "menuDescription":"사용자별 캘린더 보기",
+            "url":null
+        },{
+            "id":"groups",
+            "text":"그룹별",
+            "leaf":false,
+            "viewName":"null",
+            "menuDescription":"그룹별 캘린더 보기",
+            "url":null
+        }
+    ]
+}

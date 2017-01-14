@@ -1,0 +1,86 @@
+.rounded-corners-button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #94C7B6;
+    padding: 5px;
+}
+
+/* the sidebar is not needed for the account-related pages */
+#sidebar-container {
+    width: 0px !important;
+}
+
+#content-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#login-container {
+    text-align: center;
+}
+
+#login-container table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* labels for the text input fields */
+#login-container label {
+    padding: 0.25em;
+}
+
+/* username input field */
+#login-container #j_username {
+    background: url('../../img/login_form/users.png') no-repeat;
+    background-position: 2%;
+    padding-left: 3.5em;
+    width: 140px;
+}
+
+/* password input field */
+#login-container #j_password {
+    background: url('../../img/login_form/keyring.png') no-repeat;
+    background-position: 2%;
+    padding-left: 3.5em;
+    width: 140px;
+}
+
+/* text input fields */
+#login-container input[type="text"], #login-container input[type="password"] {
+    padding: 1em;
+    margin: 0.8em;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.openid-provider-button {
+    margin: 3px;
+}
+
+.openid-provider-button img {
+    padding: 3px;
+    max-height: 32px;
+}
+
+.registration-form-label {
+    width: 15em;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.registration-form-errors {
+    color: red;
+    margin-left: 2em;
+}
+
+.registration-form-help-text {
+    /* set the help text off from the input field above it */
+    line-height: 2;
+    /* make the help text align with the input field above it */
+    margin-left: 16em;
+}

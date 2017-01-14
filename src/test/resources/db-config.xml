@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    <context:component-scan base-package="com.idatabank.bisu.calhub.dao">
+        <context:exclude-filter type="regex" expression="com\.idatabank\.bisu\.calhub\.dao\.UserDAO"/>
+        <context:exclude-filter type="regex" expression="com\.idatabank\.bisu\.calhub\.dao\.GroupDAO"/>
+    </context:component-scan>
+    
+    <!-- BUSINESS BEANS BEGIN -->
+    <bean id="userDao" class="com.idatabank.bisu.calhub.dao.UserDAO">
+        <property name="ctxFactory" value="com.sun.jndi.ldap.LdapCtxFactory" />
+        <property name="ldapUrl" value="ldap://www.dgkim.net:389/" />
+        <property name="baseDn" value="dc=idatabank,dc=com" />
+        <property name="authentication" value="simple" />
+        <property name="searchBase" value="ou=Users" />
+    </bean>
+    <bean id="groupDao" class="com.idatabank.bisu.calhub.dao.GroupDAO">
+        <property name="ctxFactory" value="com.sun.jndi.ldap.LdapCtxFactory" />
+        <property name="ldapUrl" value="ldap://www.dgkim.net:389/" />
+        <property name="baseDn" value="dc=idatabank,dc=com" />
+        <property name="authentication" value="simple" />
+        <property name="searchBase" value="ou=Groups" />
+    </bean>
+    <!--
+    <bean id="ipmDao" class="com.idatabank.bisu.drp.dao.IpmDAO">
+        <property name="namingFactory" value="com.sun.jndi.ldap.LdapCtxFactory" />
+        <property name="providerUrl" value="ldap://www.dgkim.net:389/dc=idatabank,dc=com" />
+        <property name="binddn" value="uid=mintranet,ou=Users,dc=idatabank,dc=com" />
+        <property name="bindpw" value="mintranet5815" />
+    </bean>
+    -->
+    <!-- BUSINESS BEANS END -->
+</beans>

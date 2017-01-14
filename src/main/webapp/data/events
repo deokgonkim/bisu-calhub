@@ -1,0 +1,12 @@
+{"event":
+    [
+        {
+            "id":"FIRST",
+            "summary":"일정1",
+            "owner":"dgkim",
+            "location":"사무실",
+            "eventBegin":"20120916",
+            "eventEnd":"20120916"
+        }
+    ]
+}

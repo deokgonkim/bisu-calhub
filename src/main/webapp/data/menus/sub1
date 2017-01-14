@@ -1,0 +1,19 @@
+{"menu":
+    [
+        {
+            "id":"THIRD",
+            "text":"테스트:일정보기",
+            "leaf":true,
+            "viewName":"calendarview",
+            "menuDescription":"first description",
+            "url":"https://www.dgkim.net/wordpress/"
+        },{
+            "id":"FORTH",
+            "text":"4th menu",
+            "leaf":false,
+            "viewName":"webview",
+            "menuDescription":"second description",
+            "url":"http://www.idatabank.com"
+        }
+    ]
+}
